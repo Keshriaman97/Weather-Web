@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    height: 100vh;
+    background-color: aqua;
+    background: linear-gradient(180deg, aqua, rgba(39, 180, 37, 0.438));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.Image-location {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    background-image: url("./assets/locationx.jpg");
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 2rem;
+}
+
+.Image-loading {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    overflow: hidden;
+    background-image: url("./assets/loaderx.gif");
+    background-size: cover;
+    background-position: center;
+}
+
+.Image-wind {
+    height: 3rem;
+    width: 3rem;
+    overflow: hidden;
+    background-image: url("./assets/eind-removebg-preview\ \(1\).png");
+    background-size: cover;
+    background-position: center;
+}
+
+.Image-humidity {
+    height: 3rem;
+    width: 3rem;
+    overflow: hidden;
+    background-image: url("./assets/humdity-removebg-preview.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.Image-cloud {
+    height: 3rem;
+    width: 3rem;
+    overflow: hidden;
+    background-image: url("./assets/clouds-removebg-preview.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.Heading-app {
+    padding-top: 25px;
+}
+
+.Tab-container {
+    display: flex;
+    gap: 18rem;
+    margin-top: 2rem;
+}
+
+.tab {
+    cursor: pointer;
+    padding: 0.3rem 1rem;
+    letter-spacing: 0.7px;
+}
+
+.weather-container {
+    margin-block: 3rem;
+}
+
+.grant-location-container {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.grant-location-container.active {
+    display: flex;
+}
+
+#grant-location-text {
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+.grant-location-container p:last-of-type {
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-top: 0.75rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.75px;
+}
+
+.btn {
+    all: unset;
+    /* appearance: none;
+    border: none; */
+    font-weight: 550;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    background-color: rgba(55, 59, 57, 0.7);
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 30px;
+}
+
+.from-container {
+    max-width: 550px;
+    width: 90%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 0 10px;
+    margin-bottom: 3rem;
+}
+
+.from-container.active {
+    display: flex;
+}
+
+.from-container input {
+    width: calc(100% - 80px);
+    all: unset;
+    height: 36px;
+    padding: 0 40px;
+    border-radius: 8px;
+    background-color: rgba(55, 59, 57, 0.4);
+}
+
+.from-container input::placeholder {
+    color: rgba(25, 25, 25, 0.6);
+}
+
+.from-container input:focus {
+    outline: 3px solid rgba(25, 25, 25, 0.6);
+}
+
+.btn1{
+    border-radius: 50%;
+    padding: 10px 10px;
+}
+
+.loading-container {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 5rem;
+}
+
+.loading-container.active {
+    display: flex;
+}
+
+.user-info-container {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-info-container.active {
+    display: flex;
+}
+
+.user-info-container p {
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 0.65rem;
+}
+
+.name p {
+    font-size: 2rem;
+}
+
+.discription-px{
+    padding-top: 0.5rem;
+}
+
+.user-info-container p[data-temp] {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.parameter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.8rem;
+}
+
+.parameter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(55, 59, 57, 0.4);
+    padding: 0.9rem 2.5rem;
+    border-radius: 5px;
+}
+
+.parameter2 {
+    padding: 0.9rem 2.8rem;
+}
+
+.parameter3 {
+    padding: 0.9rem 3.5rem;
+}
+
+.parameter p {
+    font-size: 1.3rem;
+}
+
+.wrongCityName{
+    display: none;
+    font-size: 10rem;
+    font-weight: 500;
+    color: rgba(23, 22, 22, 0.6);
+    width: 600px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.7rem;
+}
+
+.wrongCityName.active{
+    display: flex;
+}
+
+.tab.current-tab {
+    background-color: rgba(55, 59, 57, 0.568);
+    border-radius: 4px;
+}
+
+/* .active{
+    scale: 1;
+    opacity: 1;
+    display: flex;
+} */

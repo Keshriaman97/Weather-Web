@@ -1,0 +1,92 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Weather API</title>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <h1 class="Heading-app">WEATHER APP</h1>
+
+        <div class="Tab-container">
+            <p class="tab" data-userWeather>Your Weather</p>
+            <p class="tab" data-searchWeather>Search Weather</p>
+        </div>
+
+
+        <div class="weather-container">
+
+        <!-- grant location container -->
+            <div class="grant-location-container">
+                <div class="Image-location"></div>
+                <p id="grant-location-text">Grant Location Access</p>
+                <p >Allow Access to get Weather Inoformation</p>
+                <button class="btn" data-grantAccess-btn>Grant Access</button>
+            </div>
+
+        <!-- search form -> from container -->
+            <form class="from-container" data-searchFrom>
+                <input placeholder="Search for City..." data-searchInput>
+                <button class="btn btn1" type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+
+        <!-- Loading screen containers-->
+            <div class="loading-container">
+                <div class="Image-loading"></div>
+                <p>Loading</p>
+            </div>
+
+        <!--Show Weather information-->
+            <div class="user-info-container">
+
+                <div class="name">
+                    <p data-cityname></p>
+                    <img data-countryIcon width="25" height="25">
+                </div>
+
+                <p class="discription-px" data-weatherDecsription></p>
+
+                <img data-weatherIcon width="90" height="90">
+
+                <p data-temp></p>
+
+                <div class="parameter-container">
+                    <div class="parameter">
+                        <div class="Image-wind"></div>
+                        <p>windspeed</p>
+                        <p data-windspeed></p>
+                    </div>
+                    <div class="parameter parameter2">
+                        <div class="Image-humidity"></div>
+                        <p>Humidity</p>
+                        <p data-humidity></p>
+                    </div>
+                    <div class="parameter parameter3">
+                        <div class="Image-cloud"></div>
+                        <p>Clouds</p>
+                        <p data-cloudiness></p>
+                    </div>
+                </div>
+
+            </div>
+
+        <!--if city name is wrong-->
+            <div wrong-cityName class="wrongCityName">404</div>
+
+        </div>
+
+    </div>
+
+    <script src="weatherMind.js"></script>
+</body>
+
+</html>
